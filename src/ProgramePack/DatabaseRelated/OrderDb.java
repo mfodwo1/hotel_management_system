@@ -1,6 +1,8 @@
-package DatabaseRelated;
+package ProgramePack.DatabaseRelated;
 
-import Project.Order;
+import ProgramePack.DatabaseRelated.DataBaseConnection;
+import ProgramePack.DatabaseRelated.DataBaseConnection;
+import ProgramePack.Project.Order;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

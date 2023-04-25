@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DatabaseRelated;
+package ProgramePack.DatabaseRelated;
 
-import Project.Food;
+import ProgramePack.DatabaseRelated.DataBaseConnection;
+import ProgramePack.DatabaseRelated.DataBaseConnection;
+import ProgramePack.Project.Food;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
