@@ -24,7 +24,7 @@
 /nbbuild/
 /nbdist/
 # Package Files #
-*.jar
+
 *.war
 *.nar
 *.ear
