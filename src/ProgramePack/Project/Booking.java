@@ -3,6 +3,7 @@ package ProgramePack.Project;
 import java.util.ArrayList;
 import java.util.Date;
 
+
 /**
  *
  * @author www.Skidaweb.com
@@ -126,11 +127,6 @@ public class Booking {
     public void setCheckOutDateTime(long checkOutDateTime) {
         this.checkOutDateTime = checkOutDateTime;
     }
-
- 
     
-    
-    
-            
     
 }

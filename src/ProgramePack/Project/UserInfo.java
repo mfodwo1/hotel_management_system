@@ -58,10 +58,5 @@ public class UserInfo {
 
     public void setType(String type) {
         this.type = type;
-    }
-    
-    
-    
-    
-    
+    }    
 }

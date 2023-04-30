@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ProgramePack.UI;
-
 import ProgramePack.Project.Booking;
 import ProgramePack.Project.UserInfo;
 import ProgramePack.DatabaseRelated.BookingDb;
@@ -153,7 +152,7 @@ public class ControlPanel extends javax.swing.JFrame {
         });
 
         roomsList.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
-        roomsList.setForeground(new java.awt.Color(229, 224, 255));
+        roomsList.setForeground(new java.awt.Color(114, 134, 211));
         roomsList.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -163,7 +162,7 @@ public class ControlPanel extends javax.swing.JFrame {
         roomsList.setVisibleRowCount(1);
         jScrollPane1.setViewportView(roomsList);
 
-        jLabel11.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(229, 224, 255));
         jLabel11.setText("Available Rooms :");
 
@@ -176,22 +175,24 @@ public class ControlPanel extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator5)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 42, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(137, 137, 137))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 436, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27))))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(btn_room_up, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel12))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addComponent(jLabel12)))
+                        .addGap(117, 117, 117)
+                        .addComponent(btn_room_up, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(137, 137, 137))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,10 +204,10 @@ public class ControlPanel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
                 .addComponent(btn_room_up, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
+                .addGap(54, 54, 54))
         );
 
         jPanel2.setBackground(new java.awt.Color(114, 134, 211));
@@ -268,7 +269,8 @@ public class ControlPanel extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(229, 224, 255));
         jLabel3.setText("Address");
 
-        btn_saveBooking.setBackground(new java.awt.Color(142, 167, 233));
+        btn_saveBooking.setBackground(new java.awt.Color(54, 188, 144));
+        btn_saveBooking.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
         btn_saveBooking.setForeground(new java.awt.Color(255, 255, 255));
         btn_saveBooking.setText("Save");
         btn_saveBooking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 167, 157)));
@@ -282,6 +284,8 @@ public class ControlPanel extends javax.swing.JFrame {
         tf_rooms.setEditable(false);
         tf_rooms.setBackground(new java.awt.Color(252, 226, 219));
         tf_rooms.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
+        tf_rooms.setText("Select Room from left");
+        tf_rooms.setToolTipText("Select Room");
 
         tf_guestNo.setBackground(new java.awt.Color(252, 226, 219));
         tf_guestNo.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
@@ -530,6 +534,11 @@ public class ControlPanel extends javax.swing.JFrame {
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setMargin(new java.awt.Insets(2, 15, 15, 14));
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jToolBar1.add(jButton3);
 
         javax.swing.GroupLayout panel_containerLayout = new javax.swing.GroupLayout(panel_container);
@@ -663,8 +672,8 @@ public class ControlPanel extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // true params block the parents to work
-        //OrderPanel c = new OrderPanel(this, true);
-        //c.setVisible(true);
+        OrderPanel c = new OrderPanel(this, true);
+        c.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -719,6 +728,12 @@ public class ControlPanel extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_date_checkInPropertyChange
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        
+         
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void searchCustomerHelper() {
         final DefaultComboBoxModel model = new DefaultComboBoxModel(customerList);
