@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # hotel_management_system
 Welcome to the Hotel Management System project! This project is designed to manage hotel clients, rooms, and reservations. It was built using Java programming language and SQLite as the database management system, and uses several Java Swing components such as JDateChooser, JFrame, JPanel, JScrollPane, JToolBar.Separator, JList, JButton, JTabel, JLabel, JTextfield, JCombobox, and JTextarea. Additionally, it uses several libraries such as jcalendar-1.4, joda-time-2.8.2, rs2xml, and swingx-all-1.6.4.
 
