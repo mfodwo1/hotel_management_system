@@ -7,6 +7,7 @@ System Requirements:
 Java SE Development Kit (JDK) 8 or above.
 NetBeans IDE 8.0 or above.
 SQLite3 Database.
+
 Getting Started:
 
 Download and install Java SE Development Kit (JDK) 8 or above.
